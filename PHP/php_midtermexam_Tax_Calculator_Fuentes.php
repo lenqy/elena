@@ -37,7 +37,7 @@
 
 class salary{
 
-    private $first_name;      
+    public $first_name;      
     public $last_name;
     public $salary;
     public $tax;
@@ -45,7 +45,8 @@ class salary{
 
     function getWithHoldingTax () {
         if (isset($_POST['submit'])) {
-            $first_name = $_POST['empid'];
+            
+           $first_name = $_POST['empid'];
 
           
            $last_name = $_POST['empname'];
@@ -78,7 +79,7 @@ class salary{
         
       }
         function display(){
-            
+            // return "<h3 align='center'>First Name: = " . $this->$first_name . "</h3>";  
             
 
         }
@@ -92,4 +93,4 @@ $new-> display();
 
 ?>
 
-</html>
+</html>    
